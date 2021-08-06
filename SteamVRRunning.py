@@ -77,10 +77,10 @@ try:
             #subprocess.Popen([sys.executable, "lighthouse-v2-manager.py on C7:61:9F:18:BF:B2 D0:60:D2:2D:C1:C8 D7:96:07:E9:10:19 DF:9D:A3:04:1E:02 D1:DA:66:D4:24:57"], stdin=subprocess.PIPE, stdout=subprocess.PIPE, stderr=subprocess.PIPE, **{'creationflags': flags})
             
             try:
-                print("Closing Other LightHouse Manager "+ pid)
+                #print("Closing Other LightHouse Manager "+ pid)
                 os.kill(int(pidLightHouseManager), signal.SIGTERM)
             except:
-                print("Failed to Close "+ pid + " Probaby Doesn't Exist.. Continuing...")
+                #print("Failed to Close "+ pid + " Probaby Doesn't Exist.. Continuing...")
                 pass
 
             if (sys.argv[1] == 'true'):
